@@ -3,7 +3,7 @@
 
 A pixel-perfect recreation of Apple's Watch Studio experience, allowing users to customize and preview their perfect Apple Watch combination.
 
-![Apple Watch Studio Clone](.preview.png)
+![Apple Watch Studio Clone](./preview.png)
 
 ## 🌟 Features
 
