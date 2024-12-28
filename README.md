@@ -1,5 +1,4 @@
 
-```markdown:web_ui/README.md
 # Apple Watch Studio Clone
 
 A pixel-perfect recreation of Apple's Watch Studio experience, allowing users to customize and preview their perfect Apple Watch combination.
