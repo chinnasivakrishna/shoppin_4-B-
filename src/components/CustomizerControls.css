@@ -1,0 +1,170 @@
+.customizer-controls {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.control-tabs {
+  display: flex;
+  padding: 16px;
+  gap: 8px;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.tab {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: #f5f5f7;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab.active {
+  background: #0071e3;
+  color: white;
+}
+
+.control-content {
+  padding: 24px;
+}
+
+.selector-section h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Size Selector Styles */
+.size-selector {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.size-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 32px;
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.size-btn.active {
+  border-color: #0071e3;
+  background: #f5f5f7;
+}
+
+.size-name {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.size-price {
+  font-size: 14px;
+  color: #86868b;
+}
+
+/* Case and Band Selector Styles */
+.case-grid, .band-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.case-option, .band-option {
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  background: white;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.case-option.active, .band-option.active {
+  border-color: #0071e3;
+  background: #f5f5f7;
+}
+
+.case-image, .band-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.case-image img, .band-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.case-info, .band-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.case-name, .band-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.price-add, .band-price {
+  font-size: 12px;
+  color: #86868b;
+}
+
+/* Material Section Styles */
+.case-material-section, .band-category {
+  margin-bottom: 32px;
+}
+
+.case-material-section h3, .band-category h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.total-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.price-add {
+  font-size: 12px;
+  color: #86868b;
+}
+
+.band-price {
+  font-size: 12px;
+  color: #86868b;
+}
+
+.case-info, .band-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.case-name, .band-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d1d1f;
+} 

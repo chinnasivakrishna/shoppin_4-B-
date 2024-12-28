@@ -1,0 +1,197 @@
+.studio-header {
+  background: rgba(251, 251, 253, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 22px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: #1d1d1f;
+}
+
+.apple-logo {
+  fill: currentColor;
+  width: 14px;
+  height: 44px;
+}
+
+.watch-text {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.studio-text {
+  font-size: 21px;
+  font-weight: 400;
+  color: #6e6e73;
+  position: relative;
+  top: 1px;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.collections-dropdown {
+  position: relative;
+}
+
+.collections-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  font-size: 12px;
+  color: #1d1d1f;
+  padding: 8px 12px;
+  border-radius: 980px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.collections-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.chevron-icon {
+  margin-top: 2px;
+}
+
+.save-btn {
+  background: #0071e3;
+  color: white;
+  border: none;
+  padding: 4px 11px;
+  border-radius: 980px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.save-btn:hover {
+  background-color: #0077ED;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 734px) {
+  .header-content {
+    padding: 0 16px;
+  }
+
+  .watch-text {
+    font-size: 17px;
+  }
+
+  .studio-text {
+    font-size: 17px;
+  }
+
+  .collections-btn {
+    padding: 6px 10px;
+  }
+
+  .save-btn {
+    padding: 3px 10px;
+  }
+}
+
+/* Dropdown Menu Styles (if needed) */
+.collections-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  padding: 8px 0;
+  margin-top: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+
+.collections-dropdown:hover .collections-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.collections-menu-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #1d1d1f;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.collections-menu-item:hover {
+  background-color: #f5f5f7;
+}
+
+/* Active States */
+.collections-btn.active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.save-btn:active {
+  transform: scale(0.96);
+}
+
+/* Focus States */
+.collections-btn:focus,
+.save-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.3);
+}
+
+/* Loading State for Save Button (if needed) */
+.save-btn.loading {
+  position: relative;
+  color: transparent;
+}
+
+.save-btn.loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} 
